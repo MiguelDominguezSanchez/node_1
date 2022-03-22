@@ -12,8 +12,7 @@ const port = process.env.PORT || 3000
  * Aquí invocamos a  las rutas
  * */
 
-// http://localhost/__
-app.use('/api', require('./routes/tracks'))
+app.use('/api', require('./routes'))
 
 app.listen(port, () => {
 	console.log(`http://localhost:${port}`)

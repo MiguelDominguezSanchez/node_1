@@ -3,7 +3,7 @@ const router = express.Router()
 
 // http://loclahost/tracks GET, POST, DELETE, PUT
 
-router.get('/tracks', (req, res) => {
+router.get('/', (req, res) => {
 	const data = ['hola', 'mundo']
 
 	res.send({ data })
