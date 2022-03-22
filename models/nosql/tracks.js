@@ -30,12 +30,10 @@ const TracksScheme = new mongoose.Schema(
 		},
 		duration: {
 			start: {
-				start: {
-					type: Number,
-				},
-				end: {
-					type: Number,
-				},
+				type: Number,
+			},
+			end: {
+				type: Number,
 			},
 		},
 		mediaId: {
