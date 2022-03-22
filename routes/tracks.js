@@ -1,10 +1,11 @@
 const express = require('express')
-const { getItems, getItem, createItem } = require('../controllers/tracks')
 const router = express.Router()
+const { validatorCreateItem } = require('../validators/tracks')
+const { getItems, getItem, createItem } = require('../controllers/tracks')
 
 // http://loclahost/tracks GET, POST, DELETE, PUT
 
 router.get('/', getItems)
-router.post('/', createItem)
+router.post('/', validatorCreateItem, createItem)
 
 module.exports = router
