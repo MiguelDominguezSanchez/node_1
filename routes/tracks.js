@@ -7,6 +7,6 @@ const { getItems, getItem, createItem } = require('../controllers/tracks')
 // http://loclahost/tracks GET, POST, DELETE, PUT
 
 router.get('/', getItems)
-router.post('/', validatorCreateItem, customHeader, createItem)
+router.post('/', validatorCreateItem, createItem)
 
 module.exports = router
